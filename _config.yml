@@ -1,0 +1,12 @@
+# Site settings
+title: Five Thrive
+email: support@fivethrive.com
+description: "Modern software development company specializing in Ruby on Rails and Shopify development expertise"
+baseurl: ""
+url: "http://fivethrive.com"
+twitter_username: fivethrive
+github_username:  fivethrive
+
+# Build settings
+markdown: kramdown
+permalink: pretty
