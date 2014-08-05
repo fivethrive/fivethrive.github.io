@@ -1,12 +1,71 @@
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="{{ site.description }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="{{ site.description }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ "/assets/css/bootstrap.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/assets/css/animate.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
 
+
+  <script src="{{ "/assets/js/jquery.min.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/assets/js/wow.min.js" | prepend: site.baseurl }}"></script>
+  <script type="text/javascript" src="{{ "/assets/js/move-top.js" | prepend: site.baseurl }}"></script>
+  <script type="text/javascript" src="{{ "/assets/js/easing.js" | prepend: site.baseurl }}"></script>
+  <script type="text/javascript" src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
+
+  <script>
+   new WOW().init();
+  </script>
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      if('{{ page.layout }}' == 'default'){
+        $(".scroll").click(function(event){   
+          event.preventDefault();
+          $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+        });
+      }
+    });
+  </script>
+   <!-- start-smoth-scrolling-->
+     <!-- Custom Theme files -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="application/x-javascript"> 
+    addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); 
+    function hideURLbar(){ window.scrollTo(0,1); } 
+  </script>
+  <!--webfonts-->
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/fonts/FontAwesome.otf" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/fonts/fontawesome-webfont.eot">
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/fonts/fontawesome-webfont.svg">
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/fonts/fontawesome-webfont.ttf">
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/fonts/fontawesome-webfont.woff">
+  <!--//webfonts-->
+  <!--start-top-nav-script-->
+  <script>
+    $(function() {
+      var pull    = $('#pull');
+        menu    = $('nav ul');
+        menuHeight  = menu.height();
+      $(pull).on('click', function(e) {
+        e.preventDefault();
+        menu.slideToggle();
+      });
+      $(window).resize(function(){
+            var w = $(window).width();
+            if(w > 320 && menu.is(':hidden')) {
+              menu.removeAttr('style');
+            }
+        });
+    });
+  </script>
+  <!--//End-top-nav-script-->
 </head>

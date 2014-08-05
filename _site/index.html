@@ -2,139 +2,356 @@
 <html>
 
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Five Thrive</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Modern software development company specializing in Ruby on Rails and Shopify development expertise">
-    <link rel="canonical" href="http://fivethrive.com/">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Five Thrive</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Modern software development company specializing in Ruby on Rails and Shopify development expertise">
+  <link rel="canonical" href="http://fivethrive.com/">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/main.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/bootstrap.css">
+  <link rel="stylesheet" href="/assets/css/animate.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
 
+
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/wow.min.js"></script>
+  <script type="text/javascript" src="/assets/js/move-top.js"></script>
+  <script type="text/javascript" src="/assets/js/easing.js"></script>
+  <script type="text/javascript" src="/assets/js/main.js"></script>
+
+  <script>
+   new WOW().init();
+  </script>
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      if('default' == 'default'){
+        $(".scroll").click(function(event){   
+          event.preventDefault();
+          $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+        });
+      }
+    });
+  </script>
+   <!-- start-smoth-scrolling-->
+     <!-- Custom Theme files -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="application/x-javascript"> 
+    addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); 
+    function hideURLbar(){ window.scrollTo(0,1); } 
+  </script>
+  <!--webfonts-->
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/fonts/FontAwesome.otf" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/fonts/fontawesome-webfont.eot">
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/fonts/fontawesome-webfont.svg">
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/fonts/fontawesome-webfont.ttf">
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/fonts/fontawesome-webfont.woff">
+  <!--//webfonts-->
+  <!--start-top-nav-script-->
+  <script>
+    $(function() {
+      var pull    = $('#pull');
+        menu    = $('nav ul');
+        menuHeight  = menu.height();
+      $(pull).on('click', function(e) {
+        e.preventDefault();
+        menu.slideToggle();
+      });
+      $(window).resize(function(){
+            var w = $(window).width();
+            if(w > 320 && menu.is(':hidden')) {
+              menu.removeAttr('style');
+            }
+        });
+    });
+  </script>
+  <!--//End-top-nav-script-->
 </head>
 
+  <body>
 
-    <body>
-
-    <header class="site-header">
-
-  <div class="wrap">
-
-    <a class="site-title" href="/">Five Thrive</a>
-
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-           viewBox="0 0 18 15" enable-background="new 0 0 18 15" xml:space="preserve">
-          <path fill="#505050" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0
-            h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#505050" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484
-            h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#505050" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0
-            c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
-      <div class="trigger">
-        
-          <a class="page-link" href="/about/">About</a>
-        
-          
-        
-          
-        
+    <header class="top-header bg">
+      <div class="container">
+        <div class="logo">
+  <a href="/"><img src="/assets/images/logo.png" title="Five Thrive" /></a>
+</div>
+<nav class="top-nav">
+  <ul class="top-nav">
+    <li class="active"><a href="#home" class="scroll">Home</a></li>
+    <li><a href="http://localhost:4000/#services" class="scroll">Services</a></li>
+    <li><a href="http://localhost:4000/#process" class="scroll">Process</a></li>
+    <li><a href="http://localhost:4000/#portfolio" class="scroll">Portfolio</a></li>
+    <li><a href="http://localhost:4000/#contact" class="scroll">Contact</a></li>
+  </ul>
+  <a href="#" id="pull"><img src="/assets/images/menu-icon.png" title="menu" /></a>
+</nav>
+        <div class="banner-info text-center">
+        <h1>Five Thrive</h1><br />
+        <span> </span>
+        <p>Building useful web applications<br />to solve real problems.</p>
       </div>
-    </nav>
-
-  </div>
-
-</header>
-
+      </div>
+    </header>
 
     <div class="page-content">
       <div class="wrap">
-      <div class="home">
-
-  <h1>Posts</h1>
-
-  <ul class="posts">
-    
-      <li>
-        <span class="post-date">Aug 1, 2014</span>
-        <a class="post-link" href="/jekyll/update/2014/08/01/welcome-to-jekyll/">Welcome to Jekyll!</a>
-      </li>
-    
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
-
+        <!-- services -->
+<div id="services" class="services">
+  <div class="container">
+    <div class="service-head text-center">
+      <h2>Core Services</h2>
+      <span> </span>
+    </div>
+    <!-- services-grids -->
+    <div class="services-grids text-center">
+      <div class="col-md-4">
+        <span class="fa fa-gears fa-3x"> </span>
+        <h3><a href="#contact">Web Apps</a></h3>
+        <p>That solve your complex business problems with modern web technologies.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="fa fa-shopping-cart fa-3x"> </i>
+        <h3><a href="#contact">Shopify Apps</a></h3>
+        <p>That extend Shopify or integrate with third party products and services.</p>
+      </div>
+      <div class="col-md-4">
+          <i class="fa fa-phone fa-3x"></i>
+          <h3><a href="#contact">Consultations</a></h3>
+          <p>That clarify technical questions, project quotes, or product-market fit analysis.</p>
+      </div>
+      <div class="clearfix"> </div>
+    </div>
+    <!-- services-grids -->
+  </div>
 </div>
+<!-- services -->
+<!-- Other process -->
+<div id="process" class="process">
+  <div class="process-grids">
+    <div class="col-md-8 process-left-grid">
+      <div class="process-head">
+        <h3>Our Process</h3>
+        <p>We specialize in listening to our customers explain the problems they are experiencing in order to offer the best possible solution and execute on the plan we agree will achieve the desired outcome.</p>
+      </div>
+      <div class="process-left-inner-grids">
+        <div class="e-left-inner-grid">
+          <div class="e-left-inner-grid-left">
+            <i class="fa fa-pencil fa-2x"> </i>
+          </div>
+          <div class="e-left-inner-grid-right">
+            <h4>Listen</h4>
+            <p>We do a great deal of listening to let you fully explain the nuances of the problem you need to solve.</p>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+        <div class="e-left-inner-grid">
+          <div class="e-left-inner-grid-left">
+            <i class="fa fa-question fa-2x"> </i>
+          </div>
+          <div class="e-left-inner-grid-right">
+            <h4>Understand</h4>
+            <p>We ask a litany of questions in order to help us put ourselves in your shoes so that our perspective lines up with your experiences.</p>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+        <div class="e-left-inner-grid">
+          <div class="e-left-inner-grid-left">
+            <i class="fa fa-language fa-2x"> </i>
+          </div>
+          <div class="e-left-inner-grid-right">
+            <h4>Translate</h4>
+            <p>We take our new understanding of your problem and translate it into the actionable steps necessary to solve your problem.</p>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+        <div class="e-left-inner-grid">
+          <div class="e-left-inner-grid-left">
+            <i class="fa fa-wrench fa-2x"> </i>
+          </div>
+          <div class="e-left-inner-grid-right">
+            <h4>Execute</h4>
+            <p>We execute the project plan while keeping an open line of communication to ensure everyone is on the same page.</p>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+        <div class="clearfix"> </div>
+      </div>
+    </div>
+    <div class="col-md-4 process-right-grid">
+      
+    </div>
+    <div class="clearfix"> </div> 
+  </div>
+</div>
+<!-- Other process -->
+<!-- portfolio -->
+<div id="portfolio" class="portfolio">
+  <div class="container">
+    <div class="service-head text-center">
+      <h2>Portfolio</h2>
+      <span> </span>
+        <!-- <p>We utilize a very simple process to help solve very complex problems. </p>
+        <div class="portfolio-top-left-grids">
+          <div class="portfolio-top-left-grid">
+            <div class="portfolio-top-left-grid-left">
+              <span class="p-icon1"> </span>
+            </div>
+            <div class="portfolio-top-left-grid-right">
+              <h5>Sail Away Your Worries</h5>
+              <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
+            </div>
+            <div class="clearfix"> </div>
+          </div>
+          <div class="portfolio-top-left-grid">
+            <div class="portfolio-top-left-grid-left">
+              <span class="p-icon2"> </span>
+            </div>
+            <div class="portfolio-top-left-grid-right">
+              <h5>All-star support team</h5>
+              <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
+            </div>
+            <div class="clearfix"> </div>
+          </div>
+          <div class="portfolio-top-left-grid">
+            <div class="portfolio-top-left-grid-left">
+              <span class="p-icon3"> </span>
+            </div>
+            <div class="portfolio-top-left-grid-right">
+              <h5>fully Integrated service</h5>
+              <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
+            </div>
+            <div class="clearfix"> </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <div class="clearfix"> </div>
+  
+    <!-- portfolio-works -->
+    <div class="portfolio-works">
+      <div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+        <div class="portfolio-work-grid-pic">
+          <img src="/assets/images/portfolio_shopify_wistia.jpg" title="name" />
+        </div>
+        <div class="portfolio-work-grid-caption">
+          <h4>Wistia</h4>
+          <p>This is a work in progress that will integrate <a href="wistia.com">wistia.com</a> with Shopify. Video marketing is booming and Wistia is not only a great company with fantastic support but their heatmap analytics are amazing!</p>
+        </div>
+      </div>
+      <div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+        <div class="portfolio-work-grid-pic">
+          <img src="/assets/images/portfolio_shopify_kissmetrics.jpg" title="name" />
+        </div>
+        <div class="portfolio-work-grid-caption">
+          <h4>KISSmetrics</h4>
+          <p>While <a href="https://google.com/analytics">Google Analytics</a> tells you <em>what</em> is going on on your site, <a href="https://kissmetrics.com">KISSmetrics</a> tells you <em>who</em> is doing what on your site. With this Shopify integration, you get fully integrated with KISSmetrics by simply adding your API Key!<br /><a href="https://apps.shopify.com/kissmetrics" target="_blank">Find out more</a>.</p>
+        </div>
+      </div>
+      <div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+        <div class="portfolio-work-grid-pic">
+          <img src="/assets/images/portfolio_shopify_crazyegg.jpg" title="name" />
+        </div>
+        <div class="portfolio-work-grid-caption">
+          <h4>CrazyEgg</h4>
+          <p>Knowing where visitors to a webpage are looking and interacting provides a great deal of information about why a certain page is converting visitors into customers or not. <a href="https://crazyegg.com">CrazyEgg</a> builds heatmaps that show where visitors are interacting.<br /><a href="https://apps.shopify.com/crazyegg" target="_blank">Find out more</a>.</p>
+        </div>
+      </div>
+      <div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+        <div class="portfolio-work-grid-pic">
+          <img src="/assets/images/portfolio_shopify_facadify.jpg" title="name" />
+        </div>
+        <div class="portfolio-work-grid-caption">
+          <h4>Facadify</h4>
+          <p>One of the most critical and difficult things for a website or shop owner to do is A/B Test for higher conversion rates. This Shopify integration enables the use of <a href="https://support.google.com/analytics/answer/1745147">Google Content Experiments</a> on a Shopify store.<br /><a href="https://apps.shopify.com/facadify">Find out more</a>.</p>
+        </div>
+      </div>
+      <div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+        <div class="portfolio-work-grid-pic">
+          <img src="/assets/images/portfolio_lemme-eng.jpg" title="name" />
+        </div>
+        <div class="portfolio-work-grid-caption">
+          <h4>Lemme Engineering</h4>
+          <p>This custom Content Management System allows the customer to maintain the content of their site with a simple web interface.<br /><a href="http://lemme-eng.com">Find out more</a>.</p>
+        </div>
+      </div>
+      <div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+        <div class="portfolio-work-grid-pic">
+          <img src="/assets/images/portfolio_your_project.jpg" title="name" />
+        </div>
+        <div class="portfolio-work-grid-caption">
+          <h4>Your Project Here!</h4>
+          <p>We would love for you to reach out and let us know how we can help your company!<br /><a href="#contact">Contact us now!</a>.</p>
+        </div>
+      </div>
+      <div class="clearfix"> </div>
+    </div>
+    <!-- portfolio-works -->
+  </div>
+</div>
+<!-- portfolio -->
 
+        <script type="text/javascript">
+          $(document).ready(function() {
+            /*
+            var defaults = {
+                containerID: 'toTop', // fading element id
+              containerHoverID: 'toTopHover', // fading element hover id
+              scrollSpeed: 1200,
+              easingType: 'linear' 
+            };
+            */
+            $().UItoTop({ easingType: 'easeOutQuart' });
+          });
+        </script>
+        <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
       </div>
     </div>
 
-    <footer class="site-footer">
-
-  <div class="wrap">
-
-    <h2 class="footer-heading">Five Thrive</h2>
-
-    <div class="footer-col-1 column">
-      <ul>
-        <li>Five Thrive</li>
-        <li><a href="mailto:support@fivethrive.com">support@fivethrive.com</a></li>
-      </ul>
+    <a name="contact"></a>
+<div id="contact" class="contact">
+  <div class="container">
+    <div class="contact-grids">
+      <div class="col-md-6">
+        <div class="contact-left">
+          <h3>Contact Us</h3>
+          <label>Don't be shy, drop us an email and say hello!</label>
+          <div class="contact-left-grids">
+            <div class="col-md-5">
+              <div class="contact-left-grid">
+                <p><i class="fa fa-twitter"></i> <a href="http://twitter.com/fivethrive">@fivethrive</a></p>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="contact-right-grid">
+                <p><i class="fa fa-envelope-o"></i> <a href="mailto:support@fivethrive.com">support@fivethrive.com</a></p>
+              </div>
+            </div>
+            <div class="clearfix"> </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="contact-right">
+          <form>
+            <input type="text" class="text" value="Name..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name...';}">
+            <input type="text" class="text" value="Email..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email...';}">
+            <textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message..</textarea>
+            <input type="submit" value="Send Message" />
+          </form>
+        </div>
+      </div>
+      <div class="clearfix">
+      <p></p>
+      </div>
     </div>
-
-    <div class="footer-col-2 column">
-      <ul>
-        <li>
-          <a href="https://github.com/fivethrive">
-            <span class="icon github">
-              <svg version="1.1" class="github-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                 viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
-                <path fill-rule="evenodd" clip-rule="evenodd" fill="#C2C2C2" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761
-                c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32
-                c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472
-                c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037
-                C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65
-                c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261
-                c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082
-                c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129
-                c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
-              </svg>
-            </span>
-            <span class="username">fivethrive</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/fivethrive">
-            <span class="icon twitter">
-              <svg version="1.1" class="twitter-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                 viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
-                <path fill="#C2C2C2" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
-                c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27
-                c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767
-                c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206
-                C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271
-                c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469
-                c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
-              </svg>
-            </span>
-            <span class="username">fivethrive</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="footer-col-3 column">
-      <p class="text">Modern software development company specializing in Ruby on Rails and Shopify development expertise</p>
-    </div>
-
   </div>
+</div>
 
-</footer>
-
-
-    </body>
+  </body>
 </html>
