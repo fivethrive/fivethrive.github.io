@@ -809,7 +809,7 @@ a.leran-more:hover{
 	-ms-transition:border-color 0.4s;
 	margin:0 0 1em 0;
 }
-.contact-right input[type="text"]:hover,.contact-right textarea:hover{
+.contact-right input[type="text"]:hover,.contact-right input[type="email"]:hover,.contact-right textarea:hover{
 	border-color:#35C2F8;
 }
 .contact-right textarea{
