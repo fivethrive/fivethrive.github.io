@@ -6,7 +6,7 @@ date:   2014-08-21
 categories: blog
 ---
 
-### The long of the short of it KISSmetrics on Shopify: TL;DR
+### The long of the short of it: KISSmetrics on Shopify (TL;DR)
 Customer analytics provide the metrics needed to understand who your customers are and how they interact with your business. KISSmetrics is customer analytics at its finest and getting it set up on your Shopify store has never been more complete and simple with our integration app. [Start understanding your customers today!][app-listing].
 
 ### What is it and why do I want KISSmetrics on Shopify?
@@ -31,7 +31,7 @@ We've removed the hassle of setting up KISSmetrics on Shopify completely! We bui
 
 Even if you manually integrate, you can't get refund or cancellation data! In short, you, a Shopify merchant, can now track each customer's behavior from initial visit to return visit to purchase and even returns by simply copy-pasting an API Key!
 
-[Install the 14 Day Free Trial Now!][app-listing] and become your customers' best friend!
+Get started truly understanding your customers! [Install the 14 Day Free Trial Now!][app-listing] and become your customers' best friend!
 
 [best-practices]: http://support.kissmetrics.com/best-practices/ecommerce-essentials.html
 [app-listing]:    https://apps.shopify.com/kissmetrics
