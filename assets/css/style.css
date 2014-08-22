@@ -452,6 +452,10 @@ a.leran-more:hover{
 	line-height: 1.7em;
 	color: #FFF;
 }
+.portfolio-work-grid-caption a{
+	text-decoration: underline;
+	color: #35C2F8;
+}
 /*----start-about----*/
 .about{
 	padding:3em 0;

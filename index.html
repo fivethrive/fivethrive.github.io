@@ -1,6 +1,25 @@
 ---
 layout: default
 ---
-{% include services.html %}
-{% include process.html %}
-{% include portfolio.html %}
+<div class="page-content">
+  <div class="wrap">
+    {% include services.html %}
+    {% include process.html %}
+    {% include portfolio.html %}
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        /*
+        var defaults = {
+            containerID: 'toTop', // fading element id
+          containerHoverID: 'toTopHover', // fading element hover id
+          scrollSpeed: 1200,
+          easingType: 'linear' 
+        };
+        */
+        $().UItoTop({ easingType: 'easeOutQuart' });
+      });
+    </script>
+    <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+  </div>
+</div>

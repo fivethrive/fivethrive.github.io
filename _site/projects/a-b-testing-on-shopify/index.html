@@ -4,7 +4,7 @@
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>A/B Testing on Shopify</title>
+  <title>A/B Testing on Shopify | Five Thrive | Shopify Partner Phoenix | Software Development Phoenix | Ruby on Rails Phoenix</title>
   <meta name="viewport" content="width=device-width">
   <meta name="description" content="Modern software development company specializing in Ruby on Rails and Shopify development expertise">
   <link rel="canonical" href="http://fivethrive.com/projects/a-b-testing-on-shopify/">
@@ -26,23 +26,16 @@
   <script>
    new WOW().init();
   </script>
-  <script type="text/javascript">
-    jQuery(document).ready(function($) {
-      if('default' == 'default'){
-        $(".scroll").click(function(event){   
-          event.preventDefault();
-          $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-        });
-      }
-    });
-  </script>
-   <!-- start-smoth-scrolling-->
-     <!-- Custom Theme files -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
   <script type="application/x-javascript"> 
     addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); 
-    function hideURLbar(){ window.scrollTo(0,1); } 
+    function hideURLbar(){ 
+      if( window.location.hash == "" ){
+        window.scrollTo(0,1);
+      }
+    }
   </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--webfonts-->
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -83,30 +76,24 @@
 <nav class="top-nav">
   <ul class="top-nav">
     <li class="active"><a href="#home" class="scroll">Home</a></li>
-    <li><a href="http://localhost:4000/#services" class="scroll">Services</a></li>
-    <li><a href="http://localhost:4000/#process" class="scroll">Process</a></li>
-    <li><a href="http://localhost:4000/#portfolio" class="scroll">Portfolio</a></li>
-    <li><a href="http://localhost:4000/#contact" class="scroll">Contact</a></li>
+    <li><a href="#services" class="scroll">Services</a></li>
+    <li><a href="#process" class="scroll">Process</a></li>
+    <li><a href="#portfolio" class="scroll">Portfolio</a></li>
+    <li><a href="#contact" class="scroll">Contact</a></li>
   </ul>
   <a href="#" id="pull"><img src="/assets/images/menu-icon.png" title="menu" /></a>
 </nav>
-        <div class="banner-info text-center">
-        <h1>Five Thrive</h1><br />
-        <span> </span>
-        <p>Building useful web applications<br />to solve real problems.</p>
-      </div>
+        
       </div>
     </header>
 
-    <div class="page-content">
-      <div class="wrap">
-        <div class="post">
+    <div class="page">
 
-  <header class="post-header">
+  <header class="page-header">
     <h1>A/B Testing on Shopify</h1>
   </header>
 
-  <article class="post-content">
+  <article class="page-content">
   <p>You’ll find this post in your <code>_posts</code> directory - edit this post and re-build (or run with the <code>-w</code> switch) to see your changes!
 To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention: YYYY-MM-DD-name-of-post.ext.</p>
 
@@ -124,23 +111,6 @@ To add new posts, simply add a file in the <code>_posts</code> directory that fo
   </article>
 
 </div>
-
-        <script type="text/javascript">
-          $(document).ready(function() {
-            /*
-            var defaults = {
-                containerID: 'toTop', // fading element id
-              containerHoverID: 'toTopHover', // fading element hover id
-              scrollSpeed: 1200,
-              easingType: 'linear' 
-            };
-            */
-            $().UItoTop({ easingType: 'easeOutQuart' });
-          });
-        </script>
-        <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-      </div>
-    </div>
 
     <a name="contact"></a>
 <div id="contact" class="contact">
@@ -167,10 +137,10 @@ To add new posts, simply add a file in the <code>_posts</code> directory that fo
       </div>
       <div class="col-md-6">
         <div class="contact-right">
-          <form>
-            <input type="text" class="text" value="Name..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name...';}">
-            <input type="text" class="text" value="Email..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email...';}">
-            <textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message..</textarea>
+          <form action="//forms.brace.io/support@fivethrive.com" method="POST">
+            <input type="text" name="name" class="text" value="Name..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name...';}">
+            <input type="email" name="_replyto" class="text" value="Email..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email...';}">
+            <textarea name="body" value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message..</textarea>
             <input type="submit" value="Send Message" />
           </form>
         </div>
@@ -182,5 +152,16 @@ To add new posts, simply add a file in the <code>_posts</code> directory that fo
   </div>
 </div>
 
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-10763510-3', 'auto');
+      ga('require', 'displayfeatures');
+      ga('send', 'pageview');
+
+    </script>
   </body>
 </html>

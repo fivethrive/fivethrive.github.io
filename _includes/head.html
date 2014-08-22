@@ -1,7 +1,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} | Five Thrive | Shopify Partner Phoenix | Software Development Phoenix | Ruby on Rails Phoenix</title>
   <meta name="viewport" content="width=device-width">
   <meta name="description" content="{{ site.description }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
@@ -23,23 +23,27 @@
   <script>
    new WOW().init();
   </script>
-  <script type="text/javascript">
-    jQuery(document).ready(function($) {
-      if('{{ page.layout }}' == 'default'){
-        $(".scroll").click(function(event){   
-          event.preventDefault();
-          $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-        });
-      }
-    });
-  </script>
-   <!-- start-smoth-scrolling-->
-     <!-- Custom Theme files -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% if page.path == "index.html" %}
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        if('{{ page.layout }}' == 'default'){
+          $(".scroll").click(function(event){   
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+          });
+        }
+      });
+    </script>
+  {% endif %}
   <script type="application/x-javascript"> 
     addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); 
-    function hideURLbar(){ window.scrollTo(0,1); } 
+    function hideURLbar(){ 
+      if( window.location.hash == "" ){
+        window.scrollTo(0,1);
+      }
+    }
   </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--webfonts-->
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>

@@ -8,34 +8,17 @@
     <header class="top-header bg">
       <div class="container">
         {% include main_nav.html %}
-        <div class="banner-info text-center">
-        <h1>Five Thrive</h1><br />
-        <span> </span>
-        <p>Building useful web applications<br />to solve business problems.</p>
-      </div>
+        {% if page.path == "index.html" %}
+          <div class="banner-info text-center">
+            <h1>Five Thrive</h1><br />
+            <span> </span>
+            <p>Building useful web applications<br />to solve business problems.</p>
+          </div>
+        {% endif %}
       </div>
     </header>
 
-    <div class="page-content">
-      <div class="wrap">
-        {{ content }}
-
-        <script type="text/javascript">
-          $(document).ready(function() {
-            /*
-            var defaults = {
-                containerID: 'toTop', // fading element id
-              containerHoverID: 'toTopHover', // fading element hover id
-              scrollSpeed: 1200,
-              easingType: 'linear' 
-            };
-            */
-            $().UItoTop({ easingType: 'easeOutQuart' });
-          });
-        </script>
-        <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-      </div>
-    </div>
+    {{ content }}
 
     {% include contact.html %}
 

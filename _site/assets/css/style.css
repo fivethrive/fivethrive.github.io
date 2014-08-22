@@ -452,6 +452,10 @@ a.leran-more:hover{
 	line-height: 1.7em;
 	color: #FFF;
 }
+.portfolio-work-grid-caption a{
+	text-decoration: underline;
+	color: #35C2F8;
+}
 /*----start-about----*/
 .about{
 	padding:3em 0;
@@ -789,7 +793,7 @@ a.leran-more:hover{
 .contact-right-grid p span.c-pin{
 	background-position: 0px -126px;
 }
-.contact-right input[type="text"],.contact-right textarea{
+.contact-right input[type="text"],.contact-right input[type="email"],.contact-right textarea{
 	width:100%;
 	padding:0.8em;	
 	font-family: 'Open Sans', sans-serif;
@@ -809,7 +813,7 @@ a.leran-more:hover{
 	-ms-transition:border-color 0.4s;
 	margin:0 0 1em 0;
 }
-.contact-right input[type="text"]:hover,.contact-right textarea:hover{
+.contact-right input[type="text"]:hover,.contact-right input[type="email"]:hover,.contact-right textarea:hover{
 	border-color:#35C2F8;
 }
 .contact-right textarea{
