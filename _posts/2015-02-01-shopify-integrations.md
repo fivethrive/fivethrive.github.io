@@ -24,7 +24,7 @@ Heatmaps give clear and compelling information about how your user interacts wit
 
 ### Navilytics
 
-Not just another heatmap tool, we are really impressed by this one! Full discloser: we are affiliates of [Navilytics][https://www.navilytics.com/?r=1476] but because we believe in them so much we are willing to put our name behind a recommendation. They offer a free tier so you can try them out today at no cost! We give you 14 days to try our integration for free too so what are you waiting for, [watch recordings of your customers interacting with your shop today][navilytics]!
+Not just another heatmap tool, we are really impressed by this one! Full discloser: we are affiliates of [Navilytics](https://www.navilytics.com/?r=1476) but because we believe in them so much we are willing to put our name behind a recommendation. They offer a free tier so you can try them out today at no cost! We give you 14 days to try our integration for free too so what are you waiting for, [watch recordings of your customers interacting with your shop today][navilytics]!
 
 I'm sure there will be more as we continue to work with shops all over the world looking for easier integration with other services. Feel free to contact us if you would like us to integrate a service for you too!
 
