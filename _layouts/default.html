@@ -36,7 +36,7 @@
     _kms('//i.kissmetrics.com/i.js');
     _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
 
-    $(".sumome-scrollbox-button").on('click', function(){
+    $(document).on('click', ".sumome-scrollbox-button", function(){
       email = $("#scrollbox_email_address").val()
       _kmq.push(['identify', email]);
       console.log(email)
