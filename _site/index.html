@@ -32,7 +32,7 @@
     <script type="text/javascript">
       jQuery(document).ready(function($) {
         if('default' == 'default'){
-          $(".scroll").click(function(event){   
+          $(".scroll").click(function(event){
             event.preventDefault();
             $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
           });
@@ -40,9 +40,9 @@
       });
     </script>
   
-  <script type="application/x-javascript"> 
-    addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); 
-    function hideURLbar(){ 
+  <script type="application/x-javascript">
+    addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+    function hideURLbar(){
       if( window.location.hash == "" ){
         window.scrollTo(0,1);
       }
@@ -92,6 +92,7 @@
     <li><a href="#services" class="scroll">Services</a></li>
     <li><a href="#process" class="scroll">Process</a></li>
     <li><a href="#portfolio" class="scroll">Portfolio</a></li>
+    <li><a href="http://blog.fivethrive.com">Blog</a></li>
     <li><a href="#contact" class="scroll">Contact</a></li>
   </ul>
   <a href="#" id="pull"><img src="/assets/images/menu-icon.png" title="menu" /></a>
@@ -118,17 +119,17 @@
     <!-- services-grids -->
     <div class="services-grids text-center">
       <div class="col-md-4">
-        <span class="fa fa-gears fa-3x"> </span>
-        <h3><a href="#contact" class="text-primary scroll">Web Apps</a></h3>
+        <a href="#portfolio" class="text-primary scroll"><i class="fa fa-gears fa-3x"> </i></a>
+        <h3><a href="#portfolio" class="text-primary scroll">Web Apps</a></h3>
         <p>That solve your complex business problems with modern web technologies.</p>
       </div>
       <div class="col-md-4">
-        <i class="fa fa-shopping-cart fa-3x"> </i>
-        <h3><a href="#contact" class="text-primary scroll">Shopify Apps</a></h3>
+        <a href="https://apps.shopify.com/partners/fivethrive" class="text-primary"><i class="fa fa-shopping-cart fa-3x"> </i></a>
+        <h3><a href="https://apps.shopify.com/partners/fivethrive" class="text-primary">Shopify Apps</a></h3>
         <p>That extend Shopify or integrate with third party products and services.</p>
       </div>
       <div class="col-md-4">
-          <i class="fa fa-phone fa-3x"></i>
+          <a href="#contact" class="text-primary scroll"><i class="fa fa-phone fa-3x"></i></a>
           <h3><a href="#contact" class="text-primary scroll">Consultations</a></h3>
           <p>That clarify technical questions, project quotes, or product-market fit analysis.</p>
       </div>
